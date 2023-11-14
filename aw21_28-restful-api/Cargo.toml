@@ -1,0 +1,32 @@
+[package]
+name = "aw21_28-restful-api"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix = "0.13.1"
+actix-web = "4.4.0"
+argon2 = "0.5.2"
+blob-uuid = "0.5.0"
+chrono = { version = "0.4.31", features = ["serde"] }
+config = "0.13.3"
+dotenv = "0.15.0"
+futures = "0.3.29"
+futures-core = "0.3.29"
+lazy_static = "1.4.0"
+rand = "0.8.5"
+regex = "1.10.2"
+reqwest = "0.11.22"
+serde = { version = "1.0.192", features = ["derive"] }
+serde_json = "1.0.108"
+sluggify = "0.1.0"
+sqlx = { version = "0.7.2", features = ["runtime-tokio-rustls", "macros", "postgres", "uuid", "chrono", "migrate"] }
+thiserror = "1.0.50"
+utoipa = { version = "4.1.0", features = ["actix_extras"] }
+utoipa-swagger-ui = { version = "4.0.0", features = ["actix-web"] }
+uuid = { version = "1.5.0", features = ["v4", "fast-rng", "macro-diagnostics"] }
+validator = { version = "0.16.1", features = ["derive", "validator_derive"] }
+validator_derive = "0.16.0"
+wiremock = "0.5.21"

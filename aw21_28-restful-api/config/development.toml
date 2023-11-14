@@ -1,0 +1,13 @@
+[application]
+port = 80
+host = "0.0.0.0"
+
+[database]
+host = "127.0.0.1"
+port = 5432
+username = "admin"
+password = "whywhywhy"
+database_name = "db_aw21"
+
+[test_client]
+base_url = "localhost"
